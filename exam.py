@@ -73,16 +73,17 @@ while True:
 
 # Number 3
 while True:
+    try:
         age = input("Enter your age (or type exit to quit): ")
-        if age == exit:
-            print("Goodbye!")
-            break
-        
-        try:
-            if age >= 18:
-                print("You can vote")
-            else:
-                print("You cannot vote")
-        except:
-            print("Invalid input")
+        if age >= 18:
+            print("you can vote !")
+            break 
+
+        if age >= 18:
+            print("You can vote")
+        else:
+            print("You cannot vote")
+    except:
+        print("Invalid input")
+     
         
