@@ -20,10 +20,10 @@ def divide_num(num1, num2):
 while True:
     try:
         print("======Basic calculator use======\n Calculator menu ")
-
-        print("1.Addition\n 2. Subtraction\n 3. Multiplication\n 4. Division\n5. Exit")
-        
         print("Option:")
+        print("1.Addition\n 2.Subtraction\n 3.Multiplication\n 4.Division\n5. Exit")
+        
+       
         number =input("Choose a number: ")
 
         num1 = input("Enter your first number")
@@ -33,19 +33,19 @@ while True:
 
         if number == "1":
             
-            print(f"Result:, {add_num, num1, num2}")
+            print(f"Result:", add_num( num1, num2))
         elif number == "2":
             
-            print(f"Result:, {subtract_num, num1, num2}")
+            print(f"Result:", subtract_num (num1, num2))
         elif number == "3": 
-    
-            print(f"Result:, {multiply_num, num1, num2}")
+            print(f"Result:", multiply_num (num1, num2))
+         
         elif number == "4":
             
             if num2 ==0:
                 print("Error: cannot divide by zero")
             else:
-                print(f"Result:, {add_num, num1, num2}")
+                 print(f"Result:", divide_num(num1, num2))
         elif number == "5":
             print("Exiting the calculator... Goodbye!")
             break
